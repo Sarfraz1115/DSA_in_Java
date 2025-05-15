@@ -5,18 +5,17 @@ import java.util.Arrays;
 
 public class jabtak {
     public static void main(String[] args) {
-       int [] nums1 = {1,3};
-       int [] nums2 = {2};
-       int [] mergearray = new int[nums1.length+ nums2.length];
+       String s  = "12.10";
+       int st = 0;
+       int end = s.length() - 1;
+       while (st < end){
+           System.out.print(s.charAt(st));
+           System.out.print(s.charAt(end));
+           st++; end--;
+       }
 
-       int i = 0;
-       for(int num: nums1){
-           mergearray[i++] = num;
-       }
-       for(int num: nums2){
-           mergearray[i++] = num;
-       }
-       Arrays.sort(mergearray);
-       System.out.println(Arrays.toString(mergearray));
+
+//        System.out.println(a);
+        System.out.println(s.length());
     }
 }
